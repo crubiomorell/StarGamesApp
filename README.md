@@ -15,7 +15,7 @@ If no player name is specified when saving the score, the score is automatically
 
 
 
-## Documentation:
+# Documentation:
 ## General purpose classes:
 ### SplashActivity class:
 The SplashActivity class is responsible for displaying a welcome screen with an animation while the application is loading. The animation is defined in the splash_animation.xml file and is loaded using the loadAnimation method of the AnimationUtils class. In addition, the screen orientation is set to portrait mode using the setRequestedOrientation method so as not to disrupt the animation. Finally, an AnimationListener is used to start the Menu activity once the animation is complete, and the current activity is finished so that the user cannot return to it.
