@@ -13,7 +13,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
 public class DataBase extends SQLiteOpenHelper {
-    private static final int VERSION = 13;
+    private static final int VERSION = 14;
     private SQLiteDatabase mwDB;
     private SQLiteDatabase mrDB;
     private static final String NOMBRE_DB = "game_scores";
