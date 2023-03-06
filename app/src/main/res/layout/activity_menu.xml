@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".Menu">
+
+    <android.widget.Button
+        android:id="@+id/login2048"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_gravity="start"
+        android:width="160dp"
+        android:height="45dp"
+        android:animation="@anim/animation_set"
+        android:background="@drawable/button"
+        android:enabled="true"
+        android:text="@string/j_2048"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TextContrastCheck"
+        tools:visibility="visible" />
+
+    <android.widget.Button
+        android:id="@+id/loginLightsOut"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="32dp"
+        android:width="160dp"
+        android:height="45dp"
+        android:animation="@anim/animation_set"
+        android:background="@drawable/button"
+        android:enabled="true"
+        android:text="@string/j_lightsout"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login2048"
+        tools:ignore="TextContrastCheck" />
+
+    <android.widget.Button
+        android:id="@+id/loginPuntuaciones"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_gravity="start"
+        android:layout_marginTop="32dp"
+        android:width="160dp"
+        android:height="45dp"
+        android:animation="@anim/animation_set"
+        android:background="@drawable/button"
+        android:enabled="true"
+        android:text="@string/puntuacionesButton"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginLightsOut"
+        tools:ignore="TextSizeCheck,TextContrastCheck"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="417dp"
+        android:layout_height="323dp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        app:srcCompat="@drawable/gamestitle"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
+
+    <ImageView
+        android:id="@+id/alienAnimation"
+        android:layout_width="50dp"
+        android:layout_height="64dp"
+        android:translationZ="-10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/alien"
+        tools:ignore="ContentDescription" />
+    <!-- android:animation="@anim/animacion_arco"-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

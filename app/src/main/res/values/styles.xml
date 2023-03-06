@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="BlueButtonStyle">
+        <item name="android:background">#3F51B5</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:background">@color/purple_500</item>
+        <item name="colorPrimary">#11FF7C</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">#11FF7C</item>
+    </style>
+
+</resources>

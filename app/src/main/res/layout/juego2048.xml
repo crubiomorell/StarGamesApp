@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".juego2048.Juego2048"
+    android:id="@+id/l2048"
+    android:background="@drawable/backgroundimage">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tablero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/t2048"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/labelPuntuacion"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/puntuacionLabel"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/puntuacion"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/tablero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:background="#802b86e2"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.6">
+
+        <ImageView
+            android:id="@+id/casilla00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/casilla01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+
+        <ImageView
+            android:id="@+id/casilla02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+
+        <ImageView
+            android:id="@+id/casilla33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="3"
+            android:src="@drawable/empty"
+            tools:ignore="ContentDescription,ImageContrastCheck"/>
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tablero">
+
+
+        <android.widget.Button
+            android:id="@+id/returnButton"
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:animation="@anim/animation_set"
+            android:background="@drawable/button"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/returnButton"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,TextContrastCheck" />
+
+        <android.widget.Button
+            android:id="@+id/spacer"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:clickable="false"
+            android:onClick="onClick"
+            android:padding="0dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="10dp"
+            android:visibility="invisible"
+            tools:ignore="UsingOnClickInXml" />
+
+        <android.widget.Button
+            android:id="@+id/newGame"
+            android:layout_width="144dp"
+            android:layout_height="wrap_content"
+            android:animation="@anim/animation_set"
+            android:background="@drawable/button"
+            android:onClick="onClick"
+            android:padding="10dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:text="@string/newButton"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,TextContrastCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

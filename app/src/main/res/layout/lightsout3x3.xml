@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
+    tools:context=".juegolightsout.LightsOut">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:paddingHorizontal="2dp"
+            android:paddingVertical="2dp"
+            android:paddingStart="2dp"
+            android:paddingLeft="2dp"
+            android:paddingTop="2dp"
+            android:paddingEnd="2dp"
+            android:paddingRight="2dp"
+            android:paddingBottom="2dp"
+            app:srcCompat="@drawable/lightsout"
+            tools:ignore="ContentDescription,ImageContrastCheck" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/labelTimer"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/labelTimerText"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="384dp"
+        android:layout_height="442dp"
+        android:layout_marginTop="20dp"
+        android:background="#802b86e2"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBttn00"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+            <ImageButton
+                android:id="@+id/imgBttn01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+            <ImageButton
+                android:id="@+id/imgBttn02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBttn10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+            <ImageButton
+                android:id="@+id/imgBttn11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+            <ImageButton
+                android:id="@+id/imgBttn12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgBttn20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/imgBttn21"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
+
+            <ImageButton
+                android:id="@+id/imgBttn22"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@null"
+                android:cropToPadding="false"
+                android:onClick="onClick"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/lightoff"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,UsingOnClickInXml" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="408dp"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <android.widget.Button
+            android:id="@+id/returnButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:onClick="onClick"
+            android:text="@string/returnButton"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,TextContrastCheck" />
+        <android.widget.Button
+            android:id="@+id/spacer"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:clickable="false"
+            android:padding="0dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="10dp"
+            android:visibility="invisible" />
+
+        <android.widget.Button
+            android:id="@+id/pistasButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:onClick="onClick"
+            android:text="@string/pistasButton"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,TextContrastCheck" />
+        <android.widget.Button
+            android:id="@+id/spacer2"
+            android:layout_width="18dp"
+            android:layout_height="16dp"
+            android:clickable="false"
+            android:padding="0dp"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="10dp"
+            android:paddingStart="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="10dp"
+            android:visibility="invisible" />
+
+        <android.widget.Button
+            android:id="@+id/newGame"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button"
+            android:onClick="onClick"
+            android:text="@string/newButton"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml,TextContrastCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
